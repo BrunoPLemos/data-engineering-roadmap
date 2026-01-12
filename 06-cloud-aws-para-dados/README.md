@@ -286,24 +286,6 @@ Este bootcamp é um **programa completo de Cloud Computing** focado em engenhari
 
 ---
 
-### Parte 3: Projetos Integrados (Aulas 16-19)
-
-#### Aula 16-19 - Projetos Integrados AWS
-
-**Conteúdo Real**:
-
-- Projetos práticos integrando múltiplos serviços AWS
-- Deploy de aplicações completas
-- Integração entre serviços (EC2, RDS, S3, Lambda, etc.)
-- Configuração de ambientes de produção
-- Otimização e boas práticas
-
-**Objetivo**: Consolidar conhecimentos com projetos práticos completos.
-
-**Resultado**: Aplicações completas em produção na AWS.
-
----
-
 ## 🛠️ Tecnologias e Ferramentas
 
 ### AWS

@@ -64,6 +64,8 @@ Este bootcamp é um **programa intensivo de SQL e Analytics Engineering** projet
 - *[Aula-11](./Aula-11)* - **Ordem de consulta**
 - *[Aula-12](./Aula-12)* - **Database Indexing**
 - *[Aula-13](./Aula-13)* - **Database Partition**
+- *[Aula-14](./Aula-14)* - **Aula 14** (conteúdo a ser definido)
+- *[Aula-15](./Aula-15)* - **Projeto Prático: dbt-cloud**
 
 
 ## 💼 Preparação para o Mercado
