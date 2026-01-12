@@ -1,4 +1,4 @@
-# Roadmap de Engenharia de Dados 
+# Roadmap de Engenharia de Dados
 
 <p align="center">
   <a href="https://suajornadadedados.com.br/"><img src="pics/logo.png" alt="Jornada de Dados"></a>
@@ -7,15 +7,99 @@
     <em>Nossa missão é fornecer o melhor ensino em engenharia de dados</em>
 </p>
 
-Bem-vindo ao **Roadmap de Engenharia de Dados** da **Jornada de Dados**! Este repositório foi construído colaborativamente e tem como objetivo capacitá-lo para a carreira de engenharia de dados, ajudando profissionais como você a atingir novos patamares em sua trajetória profissional.
+## 📋 Sobre
 
-Aqui você encontrará:
+Este é o **repositório oficial da Formação Profissional em Engenharia de Dados** da **Jornada de Dados**. Este repositório contém todo o conteúdo prático, projetos, exercícios e materiais de apoio utilizados durante a formação.
 
-- **Roadmap de Estudo:** Links, referências e materiais complementares para auxiliar no seu aprendizado. Se você quer ter um plano de estudo, encontrará uma série de projetos e recursos que o guiarão passo a passo no desenvolvimento das habilidades essenciais em engenharia de dados.
-- **Códigos das Aulas:** Todos os códigos e materiais utilizados durante as aulas estão disponíveis neste repositório para que você possa praticar e aprofundar seu conhecimento.
-- **Calendário dos Próximos Encontros:** Fique por dentro das datas e temas dos próximos workshops e bootcamps da Jornada de Dados.
+**Estrutura do Repositório:**
 
-Se você gostou do conteúdo e quer se inscrever em nosso programa profissional, pode fazer isso aqui:
+- **`01-projetos/`**: Projetos práticos completos que demonstram conceitos avançados de engenharia de dados
+- **`02-fundamentos-dados/`**: Fundamentos essenciais (Git, GitHub, Deploy, WSL)
+- **`03-python-avancado-para-dados/`**: Conteúdo avançado de Python aplicado a dados
+- **`04-sql-analytics-dbt-core/`**: SQL avançado e Analytics Engineering com dbt
+- **`04-workflow-orchestration-deploy-airflow/`**: Orquestração de workflows com Airflow
+- **`05-engenharia-de-dados-e-ia/`**: Projetos avançados (APIs, Kafka, Streamlit, Terraform)
+- **`06-cloud-aws-para-dados/`**: Conteúdo prático de Cloud AWS para dados
+
+## 🎯 Objetivos da Formação
+
+Esta formação visa capacitar profissionais para:
+
+- Construir pipelines de dados robustos e escaláveis
+- Dominar ferramentas modernas de engenharia de dados (Python, SQL, Airflow, dbt, Cloud)
+- Aplicar boas práticas de desenvolvimento e arquitetura de dados
+- Implementar soluções de dados em produção
+- Trabalhar com dados em grande escala (Big Data)
+
+## 🚀 Como Usar Este Repositório
+
+1. **Navegue pelas pastas** seguindo a ordem sugerida ou conforme seu nível de conhecimento
+2. **Cada projeto/módulo possui seu próprio README** com instruções detalhadas
+3. **Clone o repositório** para ter acesso local aos códigos:
+   ```bash
+   git clone https://github.com/lvgalvao/data-engineering-roadmap.git
+   cd data-engineering-roadmap
+   ```
+4. **Siga os pré-requisitos** indicados em cada projeto antes de começar
+
+## 📚 Conteúdo Disponível
+
+### Projetos Práticos (`01-projetos/`)
+
+1. **Data Project Foundations**: Estruturação de projetos de dados com boas práticas
+2. **Python Big Data Processing**: Processamento de grandes volumes de dados (1 bilhão de linhas)
+3. **CRUD API Data Application**: API REST completa com FastAPI, PostgreSQL e Streamlit
+4. **Data Quality Engineering**: Engenharia de qualidade de dados com DuckDB
+5. **SQL Advanced Analytics**: Análises avançadas com SQL (banco Northwind)
+6. **Web Scraping NoSQL Pipelines**: Web scraping com Redis e MongoDB
+7. **PDF Data Extraction**: Extração de dados de PDFs com S3 e SQS
+8. **Databricks Data Modeling**: Modelagem de dados no Databricks (Bronze-Silver-Gold)
+9. **Databricks AI Project**: Agentes de IA com LangChain e Vector Search
+
+### Fundamentos (`02-fundamentos-dados/`)
+
+- Git e GitHub
+- Deploy de aplicações de dados
+- Configuração de ambiente WSL
+
+### Python Avançado (`03-python-avancado-para-dados/`)
+
+- 20 aulas cobrindo desde fundamentos até APIs e projetos completos
+- Programação Orientada a Objetos
+- ETL pipelines
+- Logging e tratamento de erros
+
+### SQL e Analytics (`04-sql-analytics-dbt-core/`)
+
+- SQL avançado para Analytics
+- dbt-core para transformação de dados
+- 13 aulas práticas + conteúdo Databricks
+
+### Orquestração (`04-workflow-orchestration-deploy-airflow/`)
+
+- Airflow do básico ao avançado
+- Deploy de workflows
+- 7 exemplos práticos
+
+### Engenharia de Dados e IA (`05-engenharia-de-dados-e-ia/`)
+
+- REST APIs com FastAPI
+- Kafka e Pub/Sub para streaming
+- Dashboards em tempo real com Streamlit
+- Infrastructure as Code com Terraform
+
+### Cloud AWS (`06-cloud-aws-para-dados/`)
+
+- 19 aulas práticas sobre AWS para dados
+- S3, Glue, Athena, Lambda, EMR, Redshift e mais
+
+## 🔗 Links Importantes
+
+- **Site Oficial**: [Jornada de Dados](https://suajornadadedados.com.br/)
+- **Plataforma de Ensino**: [Alpaclass](https://jornadadedados.alpaclass.com/)
+- **Canal YouTube**: [Workshops ao vivo e tutoriais](https://www.youtube.com/@JornadadeDados)
+
+Se você gostou do conteúdo e quer se inscrever em nosso programa profissional, acesse: [Jornada de Dados](https://suajornadadedados.com.br/)
 
 ---
 
