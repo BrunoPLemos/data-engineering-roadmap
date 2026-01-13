@@ -330,6 +330,8 @@ ROLLBACK;
 
 ## 🎯 Foco do Curso
 
+Nossos dados: https://docs.google.com/spreadsheets/d/1V_ICue9zOznu-8WlCUpb0ZmHEE5NZcqgV1_Gw4RIJp4/edit?usp=sharing
+
 Neste **Dia 1**, vamos focar em:
 
 ✅ **DQL (SELECT)** - 90% do tempo  
