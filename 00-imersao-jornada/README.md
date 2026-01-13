@@ -25,6 +25,9 @@ Uma empresa de e-commerce está abrindo sua operação digital e precisa usar da
 
 ---
 
+Download dos arquivos das aulas: [Drive](https://drive.google.com/drive/folders/1ov9F7bYVJyDDBy2Xn4HDYSycTuZAfpWu?usp=sharing)
+---
+
 ## 📚 As 4 Aulas da Imersão
 
 ### 📊 Dia 1: SQL & Analytics
