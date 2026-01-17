@@ -52,8 +52,13 @@ P90 (Otimista): Cenário de alta demanda, útil para evitar a falta de estoque (
 O modelo conseguiu captar as flutuações históricas e projetar uma tendência de estabilização para os próximos dias.
 
 Produtos com IDs específicos (ex: Item 1 e Item 13) apresentam comportamentos de estoque distintos, permitindo uma gestão personalizada por SKU.
+<img width="1786" height="628" alt="image" src="https://github.com/user-attachments/assets/2eb46417-84fb-4b20-92be-1f2ca90deecf" />
+<img width="1794" height="625" alt="image" src="https://github.com/user-attachments/assets/632562bb-6df1-4b8a-aa62-b33ede29a85b" />
+
+
 
 A alta influência do preço sugere que promoções ou alterações de valores podem ser usadas estrategicamente para gerenciar o volume de estoque.
 
 🛠️ Tecnologias Utilizadas
 AWS SageMaker Canvas (Machine Learning No-Code)
+
