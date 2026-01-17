@@ -1,147 +1,59 @@
-# Formação Profissional em Engenharia de Dados e Inteligência Artificial
+📊 Previsão de Estoque Inteligente na AWS com SageMaker Canvas
+Este projeto foi desenvolvido como parte de um Bootcamp na DIO, focado em utilizar inteligência artificial para prever níveis de estoque de produtos. O objetivo principal é aplicar o conceito de No-Code ML utilizando o Amazon SageMaker Canvas.
 
-**(Extensão Universitária)**
+🚀 Passo a Passo do Projeto
+1. Preparação dos Dados
+O dataset utilizado contém informações históricas de vendas e estoque, com as seguintes colunas principais:
 
-<p align="center">
-  <a href="https://suajornadadedados.com.br/"><img src="pics/logo.png" alt="Jornada de Dados"></a>
-</p>
-<p align="center">
-    <em>Nossa missão é fornecer o melhor ensino em engenharia de dados</em>
-</p>
+ID_PRODUTO: Identificador único de cada item.
 
-## 📋 Sobre
+DATA_EVENTO: Carimbo de data/hora do registro.
 
-Este é o **repositório oficial da Formação Profissional em Engenharia de Dados e Inteligência Artificial (Extensão Universitária)** da **Jornada de Dados**. 
+PRECO: Valor unitário do produto.
 
-**Esse é o roadmap para se especializar em engenharia de dados**, baseado em fundamentos, principais tecnologias de mercado e projetos práticos do mundo real. Este repositório contém todo o conteúdo prático, projetos, exercícios e materiais de apoio utilizados durante a formação.
+QUANTIDADE_ESTOQUE: A variável alvo que desejamos prever.
 
-### 🎓 Por que "Formação Profissional"?
+2. Configuração do Modelo no SageMaker Canvas
+Após realizar o upload do dataset, as seguintes configurações foram aplicadas:
 
-Este não é apenas um curso ou bootcamp. É uma **formação completa** que:
+Target Column: QUANTIDADE_ESTOQUE.
 
-- ✅ **Eleva o nível profissional**: Conteúdo estruturado para profissionais que buscam especialização
-- ✅ **Reconhecimento institucional**: Extensão Universitária com validade acadêmica
-- ✅ **Foco em mercado**: Baseado em tecnologias e práticas reais do mercado de trabalho
-- ✅ **Preparação completa**: Do zero até projetos avançados de produção
+Model Type: Time Series Forecasting (Série Temporal).
 
-### 🛠️ Engenharia de Dados como Eixo Central
+Item ID: ID_PRODUTO.
 
-A formação tem como núcleo a **Engenharia de Dados**, cobrindo:
+Timestamp: DATA_EVENTO.
 
-- **Pipelines de dados**: ETL/ELT, processamento em batch e streaming
-- **Infraestrutura**: Cloud, containers, orquestração
-- **Qualidade e observabilidade**: Validação, monitoramento, testes
-- **Produção**: Deploy, escalabilidade, manutenção
+Forecast Horizon: Configurado para prever os próximos 9 dias.
 
-### 🤖 Inteligência Artificial como Complemento Estratégico
+3. Análise e Treinamento
+O modelo foi treinado utilizando o modo "Standard Build" para garantir maior precisão. Durante a fase de análise, observamos as seguintes métricas de performance:
 
-A **IA** entra de forma estratégica e prática:
+Avg. wQL (Weighted Quantile Loss): 0.271
 
-- **Agentes de IA**: RAG, Vector Search, LangChain
-- **Aplicações reais**: Chatbots, análise de dados com LLMs
-- **Integração com dados**: Databricks + IA, pipelines inteligentes
-- **Preparação para o futuro**: Conteúdo alinhado com 2026+
+MAPE (Mean Absolute Percentage Error): 1.546
 
-### 🎓 Extensão Universitária
+WAPE (Weighted Absolute Percentage Error): 0.471
 
-A formação possui reconhecimento como **Extensão Universitária**, oferecendo:
+RMSE (Root Mean Square Error): 30.072
 
-- ✅ **Horas complementares**: Válidas para graduação
-- ✅ **Diferenciação no currículo**: Certificação com validade acadêmica
-- ✅ **Legitimidade institucional**: Reconhecimento pelo MEC
-- ✅ **Valor profissional**: Diferencial competitivo no mercado
+[!IMPORTANT] A análise de impacto das colunas mostrou que o PRECO teve uma influência de 100% nas oscilações do estoque, indicando uma forte correlação entre preço e demanda no dataset utilizado.
 
-**Estrutura do Repositório:**
+4. Resultados das Previsões
+O modelo gera três cenários de previsão baseados em quantis:
 
-- **`01-projetos/`**: Projetos práticos completos que demonstram conceitos avançados de engenharia de dados
-- **`02-fundamentos-dados/`**: Fundamentos essenciais (Git, GitHub, Deploy, WSL)
-- **`03-python-avancado-para-dados/`**: Conteúdo avançado de Python aplicado a dados
-- **`04-sql-analytics-dbt-core/`**: SQL avançado e Analytics Engineering com dbt
-- **`04-workflow-orchestration-deploy-airflow/`**: Orquestração de workflows com Airflow
-- **`05-engenharia-de-dados-e-ia/`**: Projetos avançados (APIs, Kafka, Streamlit, Terraform)
-- **`06-cloud-aws-para-dados/`**: Conteúdo prático de Cloud AWS para dados
+P10 (Pessimista): Representa um cenário onde há 10% de chance da demanda ser menor que o valor mostrado.
 
-## 🎯 Objetivos da Formação
+P50 (Médio): O valor mediano da previsão.
 
-Esta **Formação Profissional** visa capacitar profissionais para:
+P90 (Otimista): Cenário de alta demanda, útil para evitar a falta de estoque (Stockout).
 
-- **Construir pipelines de dados robustos e escaláveis** para ambientes de produção
-- **Dominar ferramentas modernas** de engenharia de dados (Python, SQL, Airflow, dbt, Cloud, Databricks)
-- **Aplicar boas práticas** de desenvolvimento, arquitetura de dados e engenharia de software
-- **Implementar soluções de dados em produção** com qualidade e observabilidade
-- **Trabalhar com dados em grande escala** (Big Data) e processamento distribuído
-- **Integrar Inteligência Artificial** em pipelines e aplicações de dados
-- **Preparar-se para o mercado** com habilidades alinhadas às demandas reais das empresas
+🔍 Insights Obtidos
+O modelo conseguiu captar as flutuações históricas e projetar uma tendência de estabilização para os próximos dias.
 
-## 🚀 Como Usar Este Repositório
+Produtos com IDs específicos (ex: Item 1 e Item 13) apresentam comportamentos de estoque distintos, permitindo uma gestão personalizada por SKU.
 
-1. **Navegue pelas pastas** seguindo a ordem sugerida ou conforme seu nível de conhecimento
-2. **Cada projeto/módulo possui seu próprio README** com instruções detalhadas
-3. **Clone o repositório** para ter acesso local aos códigos:
-   ```bash
-   git clone https://github.com/lvgalvao/data-engineering-roadmap.git
-   cd data-engineering-roadmap
-   ```
-4. **Siga os pré-requisitos** indicados em cada projeto antes de começar
+A alta influência do preço sugere que promoções ou alterações de valores podem ser usadas estrategicamente para gerenciar o volume de estoque.
 
-## 📚 Conteúdo Disponível
-
-### Projetos Práticos (`01-projetos/`)
-
-1. **Data Project Foundations**: Estruturação de projetos de dados com boas práticas
-2. **Python Big Data Processing**: Processamento de grandes volumes de dados (1 bilhão de linhas)
-3. **CRUD API Data Application**: API REST completa com FastAPI, PostgreSQL e Streamlit
-4. **Data Quality Engineering**: Engenharia de qualidade de dados com DuckDB
-5. **SQL Advanced Analytics**: Análises avançadas com SQL (banco Northwind)
-6. **Web Scraping NoSQL Pipelines**: Web scraping com Redis e MongoDB
-7. **PDF Data Extraction**: Extração de dados de PDFs com S3 e SQS
-8. **Databricks Data Modeling**: Modelagem de dados no Databricks (Bronze-Silver-Gold)
-9. **Databricks AI Project**: Agentes de IA com LangChain e Vector Search
-
-### Fundamentos (`02-fundamentos-dados/`)
-
-- Git e GitHub
-- Deploy de aplicações de dados
-- Configuração de ambiente WSL
-
-### Python Avançado (`03-python-avancado-para-dados/`)
-
-- 20 aulas cobrindo desde fundamentos até APIs e projetos completos
-- Programação Orientada a Objetos
-- ETL pipelines
-- Logging e tratamento de erros
-
-### SQL e Analytics (`04-sql-analytics-dbt-core/`)
-
-- SQL avançado para Analytics
-- dbt-core para transformação de dados
-- 13 aulas práticas + conteúdo Databricks
-
-### Orquestração (`04-workflow-orchestration-deploy-airflow/`)
-
-- Airflow do básico ao avançado
-- Deploy de workflows
-- 7 exemplos práticos
-
-### Engenharia de Dados e IA (`05-engenharia-de-dados-e-ia/`)
-
-- REST APIs com FastAPI para aplicações de dados
-- Kafka e Pub/Sub para streaming de dados em tempo real
-- Dashboards em tempo real com Streamlit
-- Infrastructure as Code com Terraform
-- Integração de IA em pipelines de dados
-
-### Cloud AWS (`06-cloud-aws-para-dados/`)
-
-- 15 aulas práticas sobre AWS para dados + projetos integrados
-- S3, EC2, RDS, Lambda, VPC, IAM, SQS, SNS, API Gateway, DynamoDB, Amplify e mais
-
-## 🔗 Links Importantes
-
-- **Site Oficial**: [Jornada de Dados](https://suajornadadedados.com.br/)
-- **Plataforma de Ensino**: [Alpaclass](https://jornadadedados.alpaclass.com/)
-- **Canal YouTube**: [Workshops ao vivo e tutoriais](https://www.youtube.com/@JornadadeDados)
-
-Se você gostou do conteúdo e quer se inscrever na **Formação Profissional em Engenharia de Dados e Inteligência Artificial (Extensão Universitária)**, acesse: [Jornada de Dados](https://suajornadadedados.com.br/)
-
----
+🛠️ Tecnologias Utilizadas
+AWS SageMaker Canvas (Machine Learning No-Code)
