@@ -1,4 +1,5 @@
 📊 Previsão de Estoque Inteligente na AWS com SageMaker Canvas
+
 Este projeto foi desenvolvido como parte de um Bootcamp na DIO, focado em utilizar inteligência artificial para prever níveis de estoque de produtos. O objetivo principal é aplicar o conceito de No-Code ML utilizando o Amazon SageMaker Canvas.
 
 🚀 Passo a Passo do Projeto
@@ -61,4 +62,5 @@ A alta influência do preço sugere que promoções ou alterações de valores p
 
 🛠️ Tecnologias Utilizadas
 AWS SageMaker Canvas (Machine Learning No-Code)
+
 
